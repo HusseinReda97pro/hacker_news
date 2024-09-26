@@ -11,6 +11,10 @@
 		3B8331232CA5515E00CB0D5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8331222CA5515E00CB0D5F /* ContentView.swift */; };
 		3B8331252CA5516500CB0D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8331242CA5516500CB0D5F /* Assets.xcassets */; };
 		3B8331282CA5516500CB0D5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8331272CA5516500CB0D5F /* Preview Assets.xcassets */; };
+		3B8331302CA5541900CB0D5F /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83312F2CA5541900CB0D5F /* NetworkManger.swift */; };
+		3B8331322CA5555C00CB0D5F /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8331312CA5555C00CB0D5F /* PostData.swift */; };
+		3B8331372CA5ECE300CB0D5F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8331362CA5ECE300CB0D5F /* DetailView.swift */; };
+		3B8331392CA5F38700CB0D5F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8331382CA5F38700CB0D5F /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		3B8331222CA5515E00CB0D5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B8331242CA5516500CB0D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8331272CA5516500CB0D5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B83312F2CA5541900CB0D5F /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
+		3B8331312CA5555C00CB0D5F /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		3B8331362CA5ECE300CB0D5F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3B8331382CA5F38700CB0D5F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		3B83311F2CA5515E00CB0D5F /* hacker_news */ = {
 			isa = PBXGroup;
 			children = (
+				3B8331352CA5ECC000CB0D5F /* Views */,
+				3B83312E2CA553FA00CB0D5F /* Models */,
 				3B8331202CA5515E00CB0D5F /* hacker_newsApp.swift */,
-				3B8331222CA5515E00CB0D5F /* ContentView.swift */,
 				3B8331242CA5516500CB0D5F /* Assets.xcassets */,
 				3B8331262CA5516500CB0D5F /* Preview Content */,
 			);
@@ -65,6 +74,33 @@
 				3B8331272CA5516500CB0D5F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B83312E2CA553FA00CB0D5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B8331342CA5ECA600CB0D5F /* New Group */,
+				3B83312F2CA5541900CB0D5F /* NetworkManger.swift */,
+				3B8331312CA5555C00CB0D5F /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B8331342CA5ECA600CB0D5F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3B8331352CA5ECC000CB0D5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B8331222CA5515E00CB0D5F /* ContentView.swift */,
+				3B8331362CA5ECE300CB0D5F /* DetailView.swift */,
+				3B8331382CA5F38700CB0D5F /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8331302CA5541900CB0D5F /* NetworkManger.swift in Sources */,
+				3B8331322CA5555C00CB0D5F /* PostData.swift in Sources */,
+				3B8331392CA5F38700CB0D5F /* WebView.swift in Sources */,
 				3B8331232CA5515E00CB0D5F /* ContentView.swift in Sources */,
+				3B8331372CA5ECE300CB0D5F /* DetailView.swift in Sources */,
 				3B8331212CA5515E00CB0D5F /* hacker_newsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,13 +6,23 @@
 //
 
 import SwiftUI
+import WebKit
 
-struct SwiftUIView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+struct WebView: UIViewRepresentable {
+    
+    let urlString: String?
+    
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
     }
-}
-
-#Preview {
-    SwiftUIView()
+    
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        if let safeString = urlString {
+            if let url = URL(string: safeString) {
+                let request = URLRequest(url:url)
+                uiView.load(request)
+            }
+        }
+    }
 }
